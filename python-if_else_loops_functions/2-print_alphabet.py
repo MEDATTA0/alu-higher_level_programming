@@ -1,3 +1,3 @@
 #!/usr/bin/python3
 
-print(f"abcdefghijklmnopqrstuvwxyz", end="")
+print("".format({"abcdefghijklmnopqrstuvwxyz"}), end="")
