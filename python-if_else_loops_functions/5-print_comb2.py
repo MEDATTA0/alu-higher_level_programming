@@ -4,4 +4,4 @@ for i in range(100):
     if i == 99:
         print("99")
     else:
-        print(f"{str(i).zfill(2)}", end=", ")
+        print("{:02}".format(i), end=", ")
