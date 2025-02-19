@@ -6,9 +6,7 @@ if __name__ == "__main__":
     num_args = len(argv)
 
     # Print the number of arguments
-    print(
-        f"Number of argument{'(s)' if num_args != 1 else ''}: {num_args}{':' if num_args > 0 else '.'}"
-    )
+    print(f"{num_args}{'argument:' if num_args > 0 else 'argument.'}")
 
     # Print each argument with its position
     for i, arg in enumerate(argv, start=1):
