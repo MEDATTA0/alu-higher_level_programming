@@ -8,7 +8,7 @@ if __name__ == "__main__":
     else:
         args = sys.argv
         i = 0
-        print(f"{len(args)} {"arguments:" if len(args) > 1 else "argument:"}")
+        print(f"{len(args) - 1} {"arguments:" if len(args) - 1 > 1 else "argument:"}")
         for arg in args:
             if i == 0:
                 i += 1
