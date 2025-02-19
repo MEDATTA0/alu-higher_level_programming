@@ -6,4 +6,4 @@ def element_at(my_list: list, idx: int, new_element: int):
         my_list[idx] = new_element
         return my_list
     else:
-        return None
+        return my_list
