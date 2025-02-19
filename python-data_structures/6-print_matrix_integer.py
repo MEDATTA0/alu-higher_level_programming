@@ -3,6 +3,4 @@
 
 def print_matrix_integer(matrix=[[]]):
     for line in matrix:
-        for element in line:
-            print(str.format("{:d}".format(element)), end=" ")
-        print("")
+        print(" ".join("{:d}".format(element) for element in line))
