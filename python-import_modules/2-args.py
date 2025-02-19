@@ -4,10 +4,10 @@ if __name__ == "__main__":
 
     argv = sys.argv[1:]  # Exclude the script name from arguments
     num_args = len(argv)
+    if num_args == 0:
+        print("0 arguments.")
+    else:
+        print(f"{num_args} {'arguments:' if num_args > 1 else 'argument:'}")
 
-    # Print the number of arguments
-    print(f"{num_args} {'arguments:' if num_args > 0 else 'argument.'}")
-
-    # Print each argument with its position
-    for i, arg in enumerate(argv, start=1):
-        print(f"{i}: {arg}")
+        for i, arg in enumerate(argv, start=1):
+            print(f"{i}: {arg}")
