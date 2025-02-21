@@ -3,7 +3,7 @@
 
 def roman_to_int(roman_number: str) -> int:
     if isinstance(roman_number, str):
-        roman_correspondence = {
+        roman_table = {
             "I": 1,
             "IV": 4,
             "V": 5,
@@ -24,11 +24,11 @@ def roman_to_int(roman_number: str) -> int:
         length = len(roman_number)
 
         while i < length:
-            if i + 1 < length and roman_number[i : i + 2] in roman_correspondence:
-                digital_number += roman_correspondence[roman_number[i : i + 2]]
+            if i + 1 < length and roman_number[i : i + 2] in roman_table:
+                digital_number += roman_table[roman_number[i : i + 2]]
                 i += 2
             else:
-                digital_number += roman_correspondence[roman_number[i]]
+                digital_number += roman_table[roman_number[i]]
                 i += 1
 
         return digital_number
