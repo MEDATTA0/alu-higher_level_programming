@@ -10,4 +10,5 @@ def best_score(a_dictionary: dict):
         if the_best < a_dictionary[key]:
             the_name = key
             the_best = a_dictionary[key]
-    return the_name
+
+    return the_name if the_name != "" else None
