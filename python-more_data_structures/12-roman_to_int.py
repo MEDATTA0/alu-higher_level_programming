@@ -24,8 +24,8 @@ def roman_to_int(roman_number: str) -> int:
         length = len(roman_number)
 
         while i < length:
-            if i + 1 < length and roman_number[i : i + 2] in roman_table:
-                digital_number += roman_table[roman_number[i : i + 2]]
+            if i + 1 < length and roman_number[i:i+2] in roman_table:
+                digital_number += roman_table[roman_number[i:i+2]]
                 i += 2
             else:
                 digital_number += roman_table[roman_number[i]]
