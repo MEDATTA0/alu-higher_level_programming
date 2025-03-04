@@ -1,3 +1,7 @@
+"""
+Your module is documented
+"""
+
 #!/usr/bin/python3
 
 
