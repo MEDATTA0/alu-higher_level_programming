@@ -11,7 +11,7 @@ class Square:
         """Initializes the square with a private instance attribute size."""
 
         try:
-            if isinstance(size, int):
+            if not isinstance(size, int):
                 raise TypeError()
             elif size < 0:
                 raise ValueError()
@@ -22,3 +22,6 @@ class Square:
         except ValueError:
             print("size must be >= 0")
         pass
+
+
+print(Square(3))
