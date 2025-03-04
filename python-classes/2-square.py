@@ -11,7 +11,7 @@ class Square:
         """Initializes the square with a private instance attribute size."""
 
         try:
-            if isinstance(size) != int:
+            if isinstance(size, int):
                 raise TypeError()
             elif size < 0:
                 raise ValueError()
