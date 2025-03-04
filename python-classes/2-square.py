@@ -22,6 +22,3 @@ class Square:
         except ValueError:
             print("size must be >= 0")
         pass
-
-
-print(Square(3))
