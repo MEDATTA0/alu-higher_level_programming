@@ -1,8 +1,7 @@
+#!/usr/bin/python3
 """
 Your module is documented
 """
-
-#!/usr/bin/python3
 
 
 class Square:
