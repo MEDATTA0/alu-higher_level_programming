@@ -32,6 +32,3 @@ class Square:
     def my_print(self):
         """Prints "#" __size times"""
         print("\n".join("#" * self.__size for _ in range(self.__size)))
-
-
-Square(3).my_print()
