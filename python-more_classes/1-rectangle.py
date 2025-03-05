@@ -39,7 +39,7 @@ class Rectangle:
         self.__width = value
 
     @height.setter
-    def width(self, value):
+    def height(self, value):
         """Setter for height with validation."""
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
