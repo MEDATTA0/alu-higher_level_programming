@@ -8,18 +8,18 @@ Your module is documented
 class Rectangle:
     """{}"""
 
-    def __init__(self, height, width):
-        if not isinstance(height, int):
-            raise TypeError("width must be an integer")
-        if height < 0:
-            raise ValueError("width must be >= 0")
-        self.__height = height
+    def __init__(self, width, height):
         """Setter for width with validation."""
         if not isinstance(width, int):
             raise TypeError("width must be an integer")
         if width < 0:
             raise ValueError("width must be >= 0")
         self.__width = width
+        if not isinstance(height, int):
+            raise TypeError("width must be an integer")
+        if height < 0:
+            raise ValueError("width must be >= 0")
+        self.__height = height
 
     @property
     def width(self):
