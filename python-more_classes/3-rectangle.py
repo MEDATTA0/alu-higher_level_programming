@@ -56,7 +56,11 @@ class Rectangle:
         return self.__height * 2 + self.__width * 2
 
     def __str__(self):
+        if self.__width == 0 or self.__height == 0:
+            return ""
         return f"Area: {self.area()} - Perimeter: {self.perimeter()}"
 
     def __repr__(self):
+        if self.__width == 0 or self.__height == 0:
+            return ""
         return "\n".join("#" * self.__height for _ in range(self.__width))
