@@ -60,7 +60,3 @@ class Rectangle:
 
     def __repr__(self):
         return "\n".join("#" * self.__height for _ in range(self.__width))
-
-
-print(Rectangle(2, 4))
-print(repr(Rectangle(10, 3)))
